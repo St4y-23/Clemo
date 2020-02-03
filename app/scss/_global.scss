@@ -52,3 +52,138 @@ body{
 	padding: 0 15px;
 	margin: 0 auto;
 }
+.img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.suptitle{
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1;
+}
+.title{
+	font-size: 2.6rem;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.line{
+	width: 55px;
+	height: 2px;
+	background-color: #000;
+	margin-bottom: 20px;
+}
+.btn{
+	font-weight: 300;
+	color: #fff;
+	padding: 10px 20px;
+	background-color: #000;
+	border-radius: 25px;
+	transition: linear .2s;
+	border: 1px solid transparent;
+	&:hover{
+		color: #000;
+		background-color: #fff;
+		border: 1px solid #000;
+	}
+}
+.btn--light{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid $text;
+	transition: linear .2s;
+	&:hover{
+		color: #fff;
+		background-color: $text;
+		border: 1px solid $text;
+	}
+}
+.heading{
+	margin-bottom: 80px;
+	// @include hair;
+	font-weight: 300;
+	text-align: center;
+	font-size: 3.3rem;
+}
+.centr{
+	text-align: center;
+}
+
+// TEAM
+.team{
+	background-color: $beige;
+	min-height: 700px;
+	padding: 90px 0;
+}
+.team__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.team__img{
+	margin-bottom: 15px;
+	border-radius: 50%;
+	// overflow: hidden;
+	img{
+		border-radius: 50%;
+	}
+	.team__line{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.slick-arrow{
+	border: none;
+	background: none;
+	cursor: pointer;
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: linear .2s;
+	&:hover,
+	&:focus{
+		fill: #fff;
+	}
+}
+.slick-prev{
+	left: -50px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.slick-next{
+	right: -50px;
+}
+.arrow__icon{
+	display: block;
+	height: 55px;
+}
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	li{
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: transparent;
+		border: 1px solid #000;
+		transition: linear .2s;
+		cursor: pointer;
+		margin: 0 7px;
+	}
+	button{
+		font-size: 0;
+		border: none;
+		background: none;
+		outline: none;
+	}
+	.slick-active{
+		background-color: #000;
+	}
+}

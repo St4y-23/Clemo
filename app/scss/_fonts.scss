@@ -1,1 +1,7 @@
 // font-family: 'Montserrat', sans-serif;
+
+  @font-face {
+    font-family: 'Montserrat Hairline', sans-serif;
+    src: url('../fonts/Montserrat-Hairline.woff') format('woff');
+      font-display: swap;
+}

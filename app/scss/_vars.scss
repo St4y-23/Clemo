@@ -1,5 +1,12 @@
 $text: #989898;
 $beige: #ffe1bd;
 
-
+@mixin hair {
+  font-family: 'Montserrat Hairline', sans-serif;
+}
+@mixin centr {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 

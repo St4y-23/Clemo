@@ -3,8 +3,141 @@
 @import "fonts";
 
 
+.header{
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  padding-top: 60px;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header__logo{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+.nav{
+  display: flex;
+}
+.nav__link{
+  font-weight: 300;
+  margin-left: 30px;
+  position: relative;
+  transition: linear .2s;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    bottom: -5px;
+    left: 0;
+    transition: linear .2s;
+  }
+  &:hover::before{
+    width: 100%;
+  }
+  &:hover{
+    color: #000;
+  }
+}
 
+// INTRO
+.intro{
+  padding-top: 150px;
+  margin-bottom: 80px;
+}
+.intro__inner{
+  width: 100%;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.intro__rectangle{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($beige, .8);
+  z-index: 2;
+}
+.intro__img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro__wrapper{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin: 0 auto;
+}
+.intro__line{
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro__text{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 70px;
+}
 
+// SERVICES
+.services__item{
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+.services__col{
+  // width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__wrapper{
+  max-width: 490px;
+}
+.services__img{
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  max-height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+.services__text{
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+// WORKS
+.works__inner{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.works__col{
+  width: 33.33333%;
+}
+.works__item{
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.works__btn{
+  margin: 35px auto 50px;
+}
 
 
 
