@@ -74,6 +74,9 @@ body{
 	background-color: #000;
 	margin-bottom: 20px;
 }
+.line--wht{
+	background-color: #fff;
+}
 .btn{
 	font-weight: 300;
 	color: #fff;
@@ -99,6 +102,36 @@ body{
 		border: 1px solid $text;
 	}
 }
+.btn--form{
+	cursor: pointer;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 40px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&::before{
+		position: absolute;
+		content: '';
+		// border-radius: 25px;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		transform: translateX(100%);
+		z-index: -1;
+		background-color: #000;
+		transition: linear .2s;
+	}
+	&:hover{
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	&:hover:before{
+		transform: translateX(0);
+	}
+}
 .heading{
 	margin-bottom: 80px;
 	// @include hair;
@@ -110,30 +143,7 @@ body{
 	text-align: center;
 }
 
-// TEAM
-.team{
-	background-color: $beige;
-	min-height: 700px;
-	padding: 90px 0;
-}
-.team__inner{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 50px;
-}
-.team__img{
-	margin-bottom: 15px;
-	border-radius: 50%;
-	// overflow: hidden;
-	img{
-		border-radius: 50%;
-	}
-	.team__line{
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
+
 .slick-arrow{
 	border: none;
 	background: none;
@@ -187,3 +197,73 @@ body{
 		background-color: #000;
 	}
 }
+
+.social{
+	display: flex;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.social__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	// background-color: #fff;
+	transition: linear .2s;
+	margin: 0 15px;
+	position: relative;
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: #fff;
+		z-index: -1;
+		transition: linear .2s;
+	}
+	&:hover::before{
+		transform: scale(0);
+	}
+	&:hover{
+		background-color: #000;
+		transform: rotate(360deg);
+		.social__icon{
+			fill: #fff;
+		}
+	}
+}
+.social__icon{
+	display: block;
+	height: 25px;
+	transition: linear .2s;
+	fill: #000;
+}
+
+// LINE
+.hzLine{
+	padding-top: 150px;
+	width: 100%;
+	height: 0px;
+	border-bottom: 1px solid $text;
+	margin-bottom: 90px;
+}
+.hzLineFooter{
+	width: 100%;
+	height: 0px;
+	border-bottom: 1px solid $text;
+}
+
+.date{
+	font-weight: 300;
+	color: #000;
+	margin-bottom: 35px;
+}
+.blog.date{
+	text-align: center;
+}
+
