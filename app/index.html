@@ -13,6 +13,10 @@
 
 <body>
 
+	<div class="loaderArea">
+		<div class="loader"></div>
+ </div>
+
 	<!-- SPRITE -->
 	<svg style="display: none;">
 
@@ -127,22 +131,28 @@
 					<a class="nav__link" href="blog.html">blog </a>
 					<a class="nav__link" href="contact.html">contact</a>
 				</nav>
+				<!-- HAMBURGER -->
+				<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+					<path class="line-ham top"
+						d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+					<path class="line-ham middle" d="m 30,50 h 40" />
+					<path class="line-ham bottom"
+						d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+				</svg>
+				<!-- HAMBURGER -->
 			</div>
 		</div>
 	</header>
 
 	<!-- INTRO -->
 	<div class="intro">
-		<div class="container">
-			<div class="intro__inner">
-				<div class="intro__rectangle"></div>
-				<img class="intro__img img" src="images/intro/intro__bg-1.jpg" alt="">
-				<div class="intro__wrapper">
-					<div class="intro__title title">we are clemo.</div>
-					<div class="intro__line line"></div>
-					<div class="intro__text">professionals <br> in the creative industries</div>
-					<a class="intro__btn btn" href="#">get in touch</a>
-				</div>
+		<div class="intro__inner" style="background-image: url(images/intro/intro__bg-1.jpg)">
+			<div class="intro__rectangle"></div>
+			<div class="intro__wrapper">
+				<div class="intro__title title">we are clemo.</div>
+				<div class="intro__line line"></div>
+				<div class="intro__text">professionals <br> in the creative industries</div>
+				<a class="intro__btn btn" href="#">get in touch</a>
 			</div>
 		</div>
 	</div>
@@ -154,71 +164,59 @@
 			<div class="services__inner">
 
 				<div class="services__item">
-					<div class="services__col">
-						<div class="services__img"><img class="img" src="images/services/kitchen.jpeg" alt=""></div>
-					</div>
-					<div class="services__col">
-						<div class="services__wrapper">
-							<div class="suptitle">creative</div>
-							<div class="title">kitchen</div>
-							<div class="line"></div>
-							<p class="services__text">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-								rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-								explicabo.
-							</p>
-							<p class="services__text">
-								Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-								dolores eos qui ratione voluptatem sequi nesciunt.
-							</p>
-							<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
-						</div>
+					<div class="services__img"><img class="img" src="images/services/kitchen.jpeg" alt=""></div>
+					<div class="services__wrapper">
+						<div class="suptitle">creative</div>
+						<div class="title">kitchen</div>
+						<div class="line"></div>
+						<p class="services__text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+							rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+							explicabo.
+						</p>
+						<p class="services__text">
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+							dolores eos qui ratione voluptatem sequi nesciunt.
+						</p>
+						<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
 					</div>
 				</div>
 
 				<div class="services__item">
-					<div class="services__col">
-						<div class="services__wrapper">
-							<div class="suptitle">art</div>
-							<div class="title">installation</div>
-							<div class="line"></div>
-							<p class="services__text">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-								rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-								explicabo.
-							</p>
-							<p class="services__text">
-								Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-								dolores eos qui ratione voluptatem sequi nesciunt.
-							</p>
-							<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
-						</div>
+					<div class="services__wrapper">
+						<div class="suptitle">art</div>
+						<div class="title">installation</div>
+						<div class="line"></div>
+						<p class="services__text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+							rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+							explicabo.
+						</p>
+						<p class="services__text">
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+							dolores eos qui ratione voluptatem sequi nesciunt.
+						</p>
+						<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
 					</div>
-					<div class="services__col">
-						<div class="services__img"><img class="img" src="images/services/art.jpeg" alt=""></div>
-					</div>
+					<div class="services__img"><img class="img" src="images/services/art.jpeg" alt=""></div>
 				</div>
 
 				<div class="services__item">
-					<div class="services__col">
-						<div class="services__img"><img class="img" src="images/services/design.jpeg" alt=""></div>
-					</div>
-					<div class="services__col">
-						<div class="services__wrapper">
-							<div class="suptitle">print</div>
-							<div class="title">design</div>
-							<div class="line"></div>
-							<p class="services__text">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-								rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-								explicabo.
-							</p>
-							<p class="services__text">
-								Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-								dolores eos qui ratione voluptatem sequi nesciunt.
-							</p>
-							<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
-						</div>
+					<div class="services__img"><img class="img" src="images/services/art.jpeg" alt=""></div>
+					<div class="services__wrapper">
+						<div class="suptitle">print</div>
+						<div class="title">design</div>
+						<div class="line"></div>
+						<p class="services__text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+							rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+							explicabo.
+						</p>
+						<p class="services__text">
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+							dolores eos qui ratione voluptatem sequi nesciunt.
+						</p>
+						<a class="services__btn btn btn--light" href="service__kitchen.html">learn more</a>
 					</div>
 				</div>
 
@@ -342,9 +340,9 @@
 				<div class="testimonials__inner">
 					<div class="testimonials__item">
 						<div class="testimonials__item-wrapper">
-							<div class="testimonials__name title">frank sims</div>
+							<div class="testimonials__name title">doom slayer</div>
 							<div class="testimonials__line line"></div>
-							<div class="testimonials__prof">photographer</div>
+							<div class="testimonials__prof">doomguy</div>
 						</div>
 						<p class="testimonials__text">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -357,9 +355,9 @@
 				<div class="testimonials__inner">
 					<div class="testimonials__item">
 						<div class="testimonials__item-wrapper">
-							<div class="testimonials__name title">frank sims</div>
+							<div class="testimonials__name title">rick sancez</div>
 							<div class="testimonials__line line"></div>
-							<div class="testimonials__prof">photographer</div>
+							<div class="testimonials__prof">physicist</div>
 						</div>
 						<p class="testimonials__text">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -372,9 +370,9 @@
 				<div class="testimonials__inner">
 					<div class="testimonials__item">
 						<div class="testimonials__item-wrapper">
-							<div class="testimonials__name title">frank sims</div>
+							<div class="testimonials__name title">sally</div>
 							<div class="testimonials__line line"></div>
-							<div class="testimonials__prof">photographer</div>
+							<div class="testimonials__prof">traveler</div>
 						</div>
 						<p class="testimonials__text">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -387,9 +385,9 @@
 				<div class="testimonials__inner">
 					<div class="testimonials__item">
 						<div class="testimonials__item-wrapper">
-							<div class="testimonials__name title">frank sims</div>
+							<div class="testimonials__name title">john doe</div>
 							<div class="testimonials__line line"></div>
-							<div class="testimonials__prof">photographer</div>
+							<div class="testimonials__prof">unknown</div>
 						</div>
 						<p class="testimonials__text">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -402,9 +400,9 @@
 				<div class="testimonials__inner">
 					<div class="testimonials__item">
 						<div class="testimonials__item-wrapper">
-							<div class="testimonials__name title">frank sims</div>
+							<div class="testimonials__name title">jane doe</div>
 							<div class="testimonials__line line"></div>
-							<div class="testimonials__prof">photographer</div>
+							<div class="testimonials__prof">unknown</div>
 						</div>
 						<p class="testimonials__text">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -549,10 +547,18 @@
 
 
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(window).on('load', function () {
+			$preloader = $('.loaderArea'),
+				$loader = $preloader.find('.loader');
+			$loader.fadeOut();
+			$preloader.delay(350).fadeOut('slow');
+		});
+	</script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
+	
 </body>
 
 </html>

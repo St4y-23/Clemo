@@ -127,6 +127,15 @@
 					<a class="nav__link" href="blog.html">blog </a>
 					<a class="nav__link" href="contact.html">contact</a>
 				</nav>
+				<!-- HAMBURGER -->
+				<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+					<path class="line-ham top"
+						d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+					<path class="line-ham middle" d="m 30,50 h 40" />
+					<path class="line-ham bottom"
+						d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+				</svg>
+				<!-- HAMBURGER -->
 			</div>
 		</div>
 	</header>
@@ -136,97 +145,101 @@
 	<!-- LINE -->
 
 	<!-- WORK -->
-	<div class="container">
-		<div class="heading">golfino awards</div>
-		<div class="work__slider">
+	<div class="pageWork">
+		<div class="work__wrapper">
+			<div class="heading">golfino awards</div>
+			<div class="work__slider">
 
-			<div class="work__inner">
-				<div class="work__item"><img class="img" src="images/work/work__item-1.jpeg" alt=""></div>
+				<div class="work__inner">
+					<div class="work__item"><img class="img" src="images/work/work__item-1.jpeg" alt=""></div>
+				</div>
+
+				<div class="work__inner">
+					<div class="work__item"><img class="img" src="images/work/work__item-2.jpeg" alt=""></div>
+				</div>
+
+				<div class="work__inner">
+					<div class="work__item"><img class="img" src="images/work/work__item-3.jpeg" alt=""></div>
+				</div>
+
+				<div class="work__inner">
+					<div class="work__item"><img class="img" src="images/work/work__item-4.jpeg" alt=""></div>
+				</div>
+
+				<div class="work__inner">
+					<div class="work__item"><img class="img" src="images/work/work__item-5.jpeg" alt=""></div>
+				</div>
+
 			</div>
-
-			<div class="work__inner">
-				<div class="work__item"><img class="img" src="images/work/work__item-2.jpeg" alt=""></div>
-			</div>
-
-			<div class="work__inner">
-				<div class="work__item"><img class="img" src="images/work/work__item-3.jpeg" alt=""></div>
-			</div>
-
-			<div class="work__inner">
-				<div class="work__item"><img class="img" src="images/work/work__item-4.jpeg" alt=""></div>
-			</div>
-
-			<div class="work__inner">
-				<div class="work__item"><img class="img" src="images/work/work__item-5.jpeg" alt=""></div>
-			</div>
-
 		</div>
 
-		<div class="about__inner">
+		<div class="container">
+			<div class="about__inner">
 
-			<div class="about__left">
-				<div class="about__line line"></div>
-				<div class="about__title title">we create the best projects for the best companies!</div>
-			</div>
+				<div class="about__left">
+					<div class="about__line line"></div>
+					<div class="about__title title">we create the best projects for the best companies!</div>
+				</div>
 
-			<div class="about__right">
-				<div class="about__line line"></div>
-				<p class="about__text">
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-					aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-				</p>
-				<p class="about__text">
-					Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-					dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-					sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-					magnam aliquam quaerat voluptatem.
-				</p>
-				<p class="about__text">
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-					ea commodi consequatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-					doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-					beatae vitae dicta sunt explicabo
-				</p>
+				<div class="about__right">
+					<div class="about__line line"></div>
+					<p class="about__text">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+						aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					</p>
+					<p class="about__text">
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+						dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+						sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+						magnam aliquam quaerat voluptatem.
+					</p>
+					<p class="about__text">
+						Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+						ea commodi consequatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+						beatae vitae dicta sunt explicabo
+					</p>
 
-				<div class="social">
+					<div class="social">
 
-					<a class="social__item" href="#">
-						<svg class="social__icon">
-							<use xlink:href="#facebook"></use>
-						</svg>
-					</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
 
-					<a class="social__item" href="#">
-						<svg class="social__icon">
-							<use xlink:href="#twitter"></use>
-						</svg>
-					</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
 
-					<a class="social__item" href="#">
-						<svg class="social__icon">
-							<use xlink:href="#googlePlus"></use>
-						</svg>
-					</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#googlePlus"></use>
+							</svg>
+						</a>
 
-					<a class="social__item" href="#">
-						<svg class="social__icon">
-							<use xlink:href="#pinterest"></use>
-						</svg>
-					</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#pinterest"></use>
+							</svg>
+						</a>
 
-					<a class="social__item" href="#">
-						<svg class="social__icon">
-							<use xlink:href="#insta"></use>
-						</svg>
-					</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#insta"></use>
+							</svg>
+						</a>
+
+					</div>
 
 				</div>
 
 			</div>
-
 		</div>
-
 	</div>
+
 
 	<div class="related">
 		<div class="heading">related works</div>

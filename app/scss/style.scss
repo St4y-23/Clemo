@@ -3,15 +3,16 @@
 @import "fonts";
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 50;
   width: 100%;
-  padding-top: 60px;
+  padding: 30px;
+  background-color: #fff;
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .header__logo {
   font-size: 1.6rem;
@@ -56,7 +57,8 @@
 // INTRO
 .intro {
   padding-top: 150px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 1200px;
 }
 .intro__inner {
   width: 100%;
@@ -65,6 +67,8 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-size: cover;
+  background-position: center center;
 }
 .intro__rectangle {
   top: 0;
@@ -74,12 +78,6 @@
   height: 100%;
   background-color: rgba($beige, 0.8);
   z-index: 2;
-}
-.intro__img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 .intro__wrapper {
   position: relative;
@@ -103,17 +101,16 @@
   display: flex;
   margin-bottom: 100px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services__col {
-  // width: 50%;
   display: flex;
-  flex-wrap: wrap;
 }
 .services__wrapper {
   max-width: 490px;
 }
 .services__img {
-  width: 100%;
+  width: 50%;
   max-width: 560px;
   height: auto;
   max-height: 560px;
@@ -148,7 +145,7 @@
     display: block;
     position: absolute;
     @include centr;
-    transition: linear .4s;
+    transition: linear 1s;
   }
   &::before{
     position: absolute;
@@ -194,10 +191,6 @@
   display: flex;
   justify-content: center;
 }
-.testimonials__text {
-  max-width: 480px;
-  padding: 0 45px;
-}
 .testimonials__item-wrapper {
   padding: 0 45px;
   text-align: right;
@@ -206,15 +199,22 @@
   margin-right: 0;
   margin-left: auto;
 }
+.testimonials__text {
+  max-width: 480px;
+  padding: 0 45px;
+}
 
 .testimonials__sliderBottom {
   margin-bottom: 100px;
 }
 .testimonials__wrapper {
-  margin-bottom: 70px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px 70px;
   cursor: pointer;
+}
+.testimonials__logos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .testimonials__img {
   max-width: 266px;
@@ -238,6 +238,7 @@
 }
 .contacts__inner {
   display: flex;
+  flex-wrap: wrap;
 }
 .contacts__col {
   width: 50%;
@@ -283,7 +284,6 @@
   fill: #fff;
 }
 .contacts__form {
-  // margin-left: 120px;
   max-width: 480px;
   input {
     width: 100%;
@@ -376,7 +376,6 @@
   width: 33.33333%;
   display: flex;
   flex-direction: column;
-  padding: 0 90px;
   text-align: center;
 }
 .about__num {
@@ -402,13 +401,14 @@
   padding: 0 10px;
 }
 .instagram__btn {
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 // ///////////////////////////////////////////////////////////
 // WORKS
 .works__btnBox {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 60px;
   button {
     font-weight: 300;
@@ -466,6 +466,10 @@
 
 // ///////////////////////////////////////////////////////////
 // WORK
+.work__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .work__slider {
   margin-top: 200px;
   margin-bottom: 100px;
@@ -475,12 +479,33 @@
   .work__arrow {
     position: absolute;
     top: -100px;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: #000;
+      bottom: -2px;
+      transition: linear .2s;
+    }
+    &:hover,
+    &:focus{
+      &::before{
+        width: 100%;
+      }
+    }
   }
   .work-prev {
-    left: 45%;
+    left: 40%;
+    &::before{
+      right: 0;
+    }
   }
   .work-next {
-    right: 45%;
+    right: 40%;
+    &::before{
+      left: 0;
+    }
   }
 }
 .work__item {
@@ -568,6 +593,14 @@
 .blog__title {
   max-width: 680px;
 }
+.date{
+	font-weight: 300;
+	color: #000;
+	margin-bottom: 35px;
+}
+.blog.date{
+	text-align: center;
+}
 
 // ///////////////////////////////////////////////////////////
 // CONTACT
@@ -619,6 +652,10 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  height: 450px;
+  img{
+    object-fit: cover;
+  }
 }
 
 
